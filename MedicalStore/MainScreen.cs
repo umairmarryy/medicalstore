@@ -38,5 +38,12 @@ namespace MedicalStore
             this.Hide();
         
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            reports rpt = new reports();
+            rpt.Show();
+            this.Hide();
+        }
     }
 }

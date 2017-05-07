@@ -57,7 +57,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Perpetua Titling MT", 15F, System.Drawing.FontStyle.Bold);
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(21, 67);
+            this.button1.Location = new System.Drawing.Point(21, 101);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(335, 58);
             this.button1.TabIndex = 26;
@@ -72,7 +72,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Perpetua Titling MT", 15F, System.Drawing.FontStyle.Bold);
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(21, 163);
+            this.button2.Location = new System.Drawing.Point(21, 165);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(335, 58);
             this.button2.TabIndex = 27;
@@ -87,12 +87,13 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.Font = new System.Drawing.Font("Perpetua Titling MT", 15F, System.Drawing.FontStyle.Bold);
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(21, 264);
+            this.button3.Location = new System.Drawing.Point(21, 229);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(335, 58);
             this.button3.TabIndex = 28;
             this.button3.Text = "Reports";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label3
             // 
