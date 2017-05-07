@@ -48,8 +48,6 @@
             this.rectangleShape4 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.rectangleShape3 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.rectangleShape2 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
@@ -261,34 +259,6 @@
             this.rectangleShape2.Name = "rectangleShape2";
             this.rectangleShape2.Size = new System.Drawing.Size(311, 41);
             // 
-            // button3
-            // 
-            this.button3.BackgroundImage = global::MedicalStore.Properties.Resources.blue_button04;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Font = new System.Drawing.Font("Perpetua Titling MT", 15F, System.Drawing.FontStyle.Bold);
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(536, 420);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(186, 36);
-            this.button3.TabIndex = 27;
-            this.button3.Text = "Delete";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.BackgroundImage = global::MedicalStore.Properties.Resources.blue_button04;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Font = new System.Drawing.Font("Perpetua Titling MT", 15F, System.Drawing.FontStyle.Bold);
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(313, 420);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(186, 36);
-            this.button2.TabIndex = 26;
-            this.button2.Text = "Edit";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // button1
             // 
             this.button1.BackgroundImage = global::MedicalStore.Properties.Resources.blue_button04;
@@ -339,8 +309,6 @@
             this.ClientSize = new System.Drawing.Size(801, 525);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label7);
@@ -386,8 +354,6 @@
         private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape4;
         private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape3;
         private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.LinkLabel linkLabel1;

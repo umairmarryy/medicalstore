@@ -38,6 +38,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
@@ -47,7 +50,7 @@
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(34, 187);
+            this.dataGridView1.Location = new System.Drawing.Point(33, 280);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(324, 322);
             this.dataGridView1.TabIndex = 0;
@@ -57,7 +60,7 @@
             this.dataGridView2.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(411, 187);
+            this.dataGridView2.Location = new System.Drawing.Point(412, 280);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(324, 322);
             this.dataGridView2.TabIndex = 1;
@@ -67,7 +70,7 @@
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBox1.Location = new System.Drawing.Point(49, 126);
+            this.textBox1.Location = new System.Drawing.Point(53, 219);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(293, 19);
             this.textBox1.TabIndex = 2;
@@ -79,7 +82,7 @@
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBox2.Location = new System.Drawing.Point(425, 126);
+            this.textBox2.Location = new System.Drawing.Point(429, 219);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(293, 19);
             this.textBox2.TabIndex = 3;
@@ -91,7 +94,7 @@
             this.rectangleShape2.BackColor = System.Drawing.Color.White;
             this.rectangleShape2.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
             this.rectangleShape2.CornerRadius = 7;
-            this.rectangleShape2.Location = new System.Drawing.Point(409, 114);
+            this.rectangleShape2.Location = new System.Drawing.Point(409, 207);
             this.rectangleShape2.Name = "rectangleShape2";
             this.rectangleShape2.Size = new System.Drawing.Size(324, 41);
             // 
@@ -101,9 +104,10 @@
             this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
             this.shapeContainer1.Name = "shapeContainer1";
             this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
+            this.lineShape1,
             this.rectangleShape1,
             this.rectangleShape2});
-            this.shapeContainer1.Size = new System.Drawing.Size(767, 583);
+            this.shapeContainer1.Size = new System.Drawing.Size(774, 657);
             this.shapeContainer1.TabIndex = 4;
             this.shapeContainer1.TabStop = false;
             // 
@@ -112,7 +116,7 @@
             this.rectangleShape1.BackColor = System.Drawing.Color.White;
             this.rectangleShape1.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
             this.rectangleShape1.CornerRadius = 7;
-            this.rectangleShape1.Location = new System.Drawing.Point(31, 114);
+            this.rectangleShape1.Location = new System.Drawing.Point(31, 207);
             this.rectangleShape1.Name = "rectangleShape1";
             this.rectangleShape1.Size = new System.Drawing.Size(324, 41);
             // 
@@ -121,7 +125,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(234, 554);
+            this.label3.Location = new System.Drawing.Point(231, 628);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(303, 20);
             this.label3.TabIndex = 30;
@@ -157,13 +161,51 @@
             this.linkLabel1.Text = "X";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label1.Font = new System.Drawing.Font("Perpetua Titling MT", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.label1.Location = new System.Drawing.Point(88, 153);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(194, 32);
+            this.label1.TabIndex = 33;
+            this.label1.Text = "Categories";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label2.Font = new System.Drawing.Font("Perpetua Titling MT", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.label2.Location = new System.Drawing.Point(525, 151);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(100, 32);
+            this.label2.TabIndex = 34;
+            this.label2.Text = "Items";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // lineShape1
+            // 
+            this.lineShape1.Name = "lineShape1";
+            this.lineShape1.X1 = 385;
+            this.lineShape1.X2 = 382;
+            this.lineShape1.Y1 = 133;
+            this.lineShape1.Y2 = 606;
+            // 
             // reports
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::MedicalStore.Properties.Resources.medical_health_care_logo_rectangle_abstract_design_background_eps_vector_52808558;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(767, 583);
+            this.ClientSize = new System.Drawing.Size(774, 657);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -195,5 +237,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
