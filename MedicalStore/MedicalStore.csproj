@@ -60,6 +60,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="categorymng.cs" />
     <Compile Include="CTmanagement.cs">
       <SubType>Form</SubType>
     </Compile>
